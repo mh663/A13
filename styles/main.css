@@ -1,4 +1,4 @@
-/* the styles for the elements */
+/* /* the styles for the elements */
 html {
 	background-color: white;
 }
@@ -12,6 +12,51 @@ body {
 	align-content: center;
 	background-color: #fffded
 
+}
+
+/*the styles for the nav menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#nav_menu ul li{
+	float: left;
+	width: 20%;
+}
+
+#nav_menu ul li a {
+	display: block;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+
+#nav_menu a.current {
+	color: yellow;
+}
+
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+	width: 100%;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
 }
 
 /* the styles for the header */
@@ -56,6 +101,10 @@ section {
 aside {
 	width: 215px;
 	float: right;
+}
+
+section ul {
+	list-style-type: circle;
 }
 aside h1 {
 	font-size: 150%;
@@ -107,6 +156,28 @@ main ul {
 main li {
 	padding-bottom: .35em;
 }
+
+/* the styles for the article */
+article {
+	padding: .5em 0;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+article h2 {
+	padding-top: 0;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+article img {
+	float: right;
+	max-width: 40%;
+	min-width: 150px;
+	margin: .5em 0 1em 1em;
+	border: 1px solid black;
+}
+
 /* the styles for the footer */
 footer {
 	background-color: #931420;
